@@ -1,0 +1,2 @@
+# Profiles
+Profiles are used within ServerStatistics to further analyise and decompose statistic objects into smaller, identifiable sections which can be individually monitored. No server is the same, and operational monitoring requirements are different for everyone. To accomodate for this, this repository exists to provide officially supported profiles which you can easily install in your ServerStatistics setup.
