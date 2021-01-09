@@ -1,0 +1,16 @@
+version: 1
+
+profile:
+
+  name: version
+
+  applies:
+    - "net.md_5.bungee.api.connection.ProxiedPlayer"
+
+  sources:
+    - type: method
+      struct: "net.md_5.bungee.api.connection.ProxiedPlayer#getPendingConnection"
+      returns: "net.md_5.bungee.api.connection.PendingConnection"
+    - type: method
+      struct: "net.md_5.bungee.api.connection.PendingConnection#getVersion"
+      returns: "java.lang.Number"

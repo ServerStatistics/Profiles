@@ -1,0 +1,19 @@
+version: 1
+
+profile:
+
+  name: server
+
+  applies:
+    - "net.md_5.bungee.api.connection.ProxiedPlayer"
+
+  sources:
+    - type: method
+      struct: "net.md_5.bungee.api.connection.ProxiedPlayer#getServer"
+      returns: "net.md_5.bungee.api.connection.Server"
+    - type: method
+      struct: "net.md_5.bungee.api.connection.Server#getInfo"
+      returns: "net.md_5.bungee.api.config.ServerInfo"
+    - type: method
+      struct: "net.md_5.bungee.api.config.ServerInfo#getName"
+      returns: "java.lang.String"
