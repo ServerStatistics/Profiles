@@ -1,0 +1,16 @@
+version: 1
+
+profile:
+
+  name: type
+
+  applies:
+    - "org.bukkit.entity.Entity"
+
+  sources:
+    - type: method
+      struct: "org.bukkit.entity.Entity#getType"
+      returns: "org.bukkit.entity.EntityType"
+    - type: method
+      struct: "org.bukkit.entity.EntityType#name"
+      returns: "java.lang.String"
