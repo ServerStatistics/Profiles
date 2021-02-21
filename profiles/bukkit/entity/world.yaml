@@ -1,0 +1,16 @@
+version: 1
+
+profile:
+
+  name: world
+
+  applies:
+    - "org.bukkit.entity.Entity"
+
+  sources:
+    - type: method
+      struct: "org.bukkit.entity.Entity#getWorld"
+      returns: "org.bukkit.World"
+    - type: method
+      struct: "org.bukkit.World#getName"
+      returns: "java.lang.String"
