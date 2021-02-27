@@ -1,0 +1,16 @@
+version: 1
+
+profile:
+
+  name: world
+
+  applies:
+    - "org.bukkit.block.BlockState"
+
+  sources:
+    - type: method
+      struct: "org.bukkit.block.BlockState#getWorld"
+      returns: "org.bukkit.World"
+    - type: method
+      struct: "org.bukkit.World#getName"
+      returns: "java.lang.String"

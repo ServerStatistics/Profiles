@@ -1,0 +1,16 @@
+version: 1
+
+profile:
+
+  name: type
+
+  applies:
+    - "org.bukkit.block.BlockState"
+
+  sources:
+    - type: method
+      struct: "org.bukkit.block.BlockState#getType"
+      returns: "org.bukkit.Material"
+    - type: method
+      struct: "org.bukkit.Material#name"
+      returns: "java.lang.String"
