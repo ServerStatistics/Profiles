@@ -1,0 +1,16 @@
+version: 1
+
+profile:
+
+  name: world
+
+  applies:
+    - "org.bukkit.Chunk"
+
+  sources:
+    - type: method
+      struct: "org.bukkit.Chunk#getWorld"
+      returns: "org.bukkit.World"
+    - type: method
+      struct: "org.bukkit.World#getName"
+      returns: "java.lang.String"
